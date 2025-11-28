@@ -1,4 +1,4 @@
-package net.minksea.trialmod;
+package com.minksea.thepalehunger;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -14,12 +14,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(TrialMod.MOD_ID)
-public class TrialMod {
-    public static final String MOD_ID = "trialmod";
+@Mod(ThePaleHunger.MOD_ID)
+public class ThePaleHunger {
+    public static final String MOD_ID = "thepalehunger";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public TrialMod(FMLJavaModLoadingContext context) {
+    public ThePaleHunger(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
