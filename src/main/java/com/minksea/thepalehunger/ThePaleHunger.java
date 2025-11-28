@@ -1,5 +1,6 @@
 package com.minksea.thepalehunger;
 
+import com.minksea.thepalehunger.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -21,6 +22,8 @@ public class ThePaleHunger {
 
     public ThePaleHunger(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
+
+        ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
